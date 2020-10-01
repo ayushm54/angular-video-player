@@ -1,0 +1,12 @@
+<div class="row">
+  <ul class="list-group border">
+    <li class="list-group-item" [class.playing]="v === activeVideo"
+      *ngFor="let v of videoList | paginate: {itemsPerPage: 5, currentPage: page}">
+      <app-video-list-item [video]="v"></app-video-list-item>
+    </li>
+  </ul>
+</div>
+<div *ngIf="null !== videoList && videoList.length > 0" class="pagination-centered">
+  <pagination-controls (pageChange)="page = $event">
+  </pagination-controls>
+</div>

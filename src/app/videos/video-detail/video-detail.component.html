@@ -1,0 +1,9 @@
+<div class="embed-container" *ngIf="activeVideo && activeVideo !== null">
+  {{ activeVideo }}
+  <iframe width="560"
+          height="315"
+          frameborder="0"
+          allowfullscreen
+          [src]="activeVideo.videoId | videoSafeUrl">
+  </iframe>
+</div>

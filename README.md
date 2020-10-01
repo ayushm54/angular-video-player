@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
-The project yoused Youtube Data Api V3 to search the videoes and stream them.
+The project uses Youtube Data Api V3 to search the videoes and stream them.
 
 ## Development server
 
